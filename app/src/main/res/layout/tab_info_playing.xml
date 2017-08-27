@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00BCD4"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTenBai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Phia sau mot co gai"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/tvTacGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Soobin"
+        android:textSize="10sp"
+        android:layout_below="@+id/tvTenBai"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvTacGia"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tvIndexBai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1/10"
+            android:textSize="10sp"
+            android:layout_weight="1" />
+
+
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"/>
+
+        <TextView
+            android:id="@+id/tvThoiGian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:text="00:00/00:00"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>
